@@ -2,6 +2,10 @@ package it.shifty.memory.escapingreferences;
 
 public class Customer {
 
+    public Customer(String name) {
+        this.name = name;
+    }
+
     private String name;
 
     public String getName() {
@@ -10,5 +14,10 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return getName();
     }
 }

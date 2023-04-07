@@ -1,21 +1,17 @@
 package it.shifty.memory.escapingreferences;
 
-import java.util.Map;
-
 public class Main {
 
     public static void main(String[] args) {
         CustomerRecords records = new CustomerRecords();
-        Customer customerA = new Customer();
-        customerA.setName("A");
-        Customer customerB = new Customer();
-        customerB.setName("B");
 
-        records.addCustomer(customerA);
-        records.addCustomer(customerB);
+        records.addCustomer(new Customer("Simon"));
+        records.addCustomer(new Customer("Paul"));
 
-        Map<String, Customer> myCustomers = records.getCustomers();
-        myCustomers.clear();
+//        records.getCustomers().clear();
 
+        for (Customer next : records.getCustomers().values()) {
+            System.out.println(next);
+        }
     }
 }
