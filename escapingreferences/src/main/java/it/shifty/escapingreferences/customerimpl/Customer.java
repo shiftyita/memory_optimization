@@ -1,4 +1,6 @@
-package it.shifty.memory.escapingreferences;
+package it.shifty.escapingreferences.customerimpl;
+
+import it.shifty.escapingreferences.customers.ReadonlyCustomer;
 
 public class Customer implements ReadonlyCustomer {
 

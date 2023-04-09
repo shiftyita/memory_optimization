@@ -1,4 +1,4 @@
-package it.shifty.memory.escapingreferences;
+package it.shifty.escapingreferences.customers;
 
 public interface ReadonlyCustomer {
     String getName();

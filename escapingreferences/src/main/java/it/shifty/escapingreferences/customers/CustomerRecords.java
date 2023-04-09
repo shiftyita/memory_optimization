@@ -1,4 +1,6 @@
-package it.shifty.memory.escapingreferences;
+package it.shifty.escapingreferences.customers;
+
+import it.shifty.escapingreferences.customerimpl.Customer;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,8 +14,8 @@ public class CustomerRecords implements Iterable<Customer> {
         this.records = new HashMap<>();
     }
 
-    public void addCustomer(Customer c) {
-        this.records.put(c.getName(), c);
+    public void addCustomer(String name) {
+        this.records.put(name, new Customer(name));
     }
 
     public Map<String, Customer> getCustomers() {
