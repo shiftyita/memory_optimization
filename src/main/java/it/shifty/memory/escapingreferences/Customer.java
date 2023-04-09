@@ -1,13 +1,18 @@
 package it.shifty.memory.escapingreferences;
 
-public class Customer {
+public class Customer implements ReadonlyCustomer {
 
     public Customer(String name) {
         this.name = name;
     }
 
+    public Customer(Customer c) { //copy object
+        this.name = c.getName();
+    }
+
     private String name;
 
+    @Override
     public String getName() {
         return name;
     }
@@ -20,4 +25,6 @@ public class Customer {
     public String toString() {
         return getName();
     }
+
+
 }
