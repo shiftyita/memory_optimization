@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/memory_optimizationClient/pom.xml" />
         <option value="$PROJECT_DIR$/escapingreferences/pom.xml" />
         <option value="$PROJECT_DIR$/escapingreferences-client/pom.xml" />
+        <option value="$PROJECT_DIR$/exploringStrings/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
