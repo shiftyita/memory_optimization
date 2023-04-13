@@ -9,7 +9,7 @@ public class Main {
 //        System.out.println(one == two);
 
         Integer i = 76;
-        String three = i.toString();
+        String three = i.toString().intern();
         String four = "76";
 
         System.out.println(three.equals(four));
